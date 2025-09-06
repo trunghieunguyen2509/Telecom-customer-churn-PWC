@@ -44,5 +44,5 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 
 ## Results and findings
 - Churn rate:
-[Churn Rate](images/churn_distribution.png)
+![Churn Rate](images/churn_distribution.png)
 
