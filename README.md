@@ -7,7 +7,7 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 ### Data description
 - Data size: 7044 rows and 23 columns
 - This dataset contains customer information from a telecom company, Each row represents an individual customer, with features covering demographics, account details, services subscribed, and support interactions. The key target variable is Churn, indicating whether a customer has discontinued the service
-**Key Feature**
+### **Key Feature**
 * customerID – Unique identifier for each customer.
 * gender – Gender of the customer (Male/Female).
 * SeniorCitizen – Indicates if the customer is a senior (1 = Yes, 0 = No).
@@ -76,4 +76,32 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 - **Monthly Charges**: Customers who churn generally have higher monthly charges, with a median of around $80, compared to about $65 for those who stay.
 
   <img src="images/MonthCharges.png" alt="Month Charges" width="600"/>
+
+## Model training and evaluation
+Four machine learning models were evaluated using accuracy, precision, recall, F1-score
+| Model                     | Accuracy | Recall | Precision | F1-Score |
+|----------------------------|----------|--------|-----------|----------|
+| Tuned Logistic Regression | 0.86     | 0.92   | 0.90      | 0.91     |
+| Tuned Decision Tree       | 0.85     | 0.92   | 0.88      | 0.90     |
+| Tuned Random Forest       | 0.87     | 0.93   | 0.90      | 0.91     |
+Best Model: The Tuned Random Forest offers the highest precision and robust performance, making it the optimal choice for churn prediction.
+<img src="images/tuned_random_forest_confusion_matrix.png" alt="RDF" width="600"/>
+* **Feature importance:**
+<img src="images/random_forest_feature_importance.png" alt="Features" width="800"/>
+
+## Conclusion
+The company is facing a churn rate of 26.5%, which is considered high for the telecom industry and signals underlying problems that must be addressed. A closer look at the data reveals several important patterns that shed light on customer behavior.
+
+One of the strongest predictors of churn is contract length. Customers on month-to-month plans are the most volatile, with churn rates exceeding 40%. These customers lack long-term commitment and can easily switch to competitors, creating instability in the customer base. In contrast, those on one- and two-year contracts are far more stable, highlighting the importance of promoting longer-term plans.
+
+Customer profile also plays a role. Those with dependents or partners tend to stay longer, suggesting that shared household usage increases loyalty. Meanwhile, customers without dependents are more prone to leave, perhaps because they are more flexible and less tied down.
+
+Service type is another major factor. Interestingly, fiber optic customers churn at the highest rates, despite it being a premium service. This suggests that these customers are either more dissatisfied with service quality or more price-sensitive compared to DSL users. Similarly, customers who do not subscribe to add-on services such as online backup, security, or tech support are far more likely to churn, while those who adopt these services show significantly lower churn. These add-ons clearly increase stickiness and improve retention.
+
+Billing and payment preferences also reveal surprising insights. Customers who opt for paperless billing or pay through electronic checks churn at much higher rates, while those using traditional billing or automatic payments via bank transfer and credit card show far greater loyalty. This suggests that while convenience is often valued, it may sometimes be linked to shorter-term, less committed customers.
+
+Tenure and charges round out the story. Customers are most at risk in their first year, with churn nearing 50% in the first 12 months. The longer customers stay, the less likely they are to leave, reinforcing the importance of building strong engagement early in the relationship. Price sensitivity is also evident: customers on higher-priced plans churn more frequently, suggesting dissatisfaction with the perceived value of their service.
+
+Taken together, the data highlights several critical churn drivers: contract length, tenure, add-on adoption, billing and payment methods, and monthly charges. To reduce churn, the company should focus on retaining early-stage customers, encouraging longer-term contracts, and promoting add-on services, while also addressing dissatisfaction among higher-paying fiber optic customers.
+  
 
