@@ -89,7 +89,7 @@ Best Model: The Tuned Random Forest offers the highest precision and robust perf
 * **Feature importance:**
 <img src="images/random_forest_feature_importance.png" alt="Features" width="800"/>
 
-## Conclusion
+## Insights and conclusion:
 The company is facing a churn rate of 26.5%, which is considered high for the telecom industry and signals underlying problems that must be addressed. A closer look at the data reveals several important patterns that shed light on customer behavior.
 
 One of the strongest predictors of churn is contract length. Customers on month-to-month plans are the most volatile, with churn rates exceeding 40%. These customers lack long-term commitment and can easily switch to competitors, creating instability in the customer base. In contrast, those on one- and two-year contracts are far more stable, highlighting the importance of promoting longer-term plans.
