@@ -43,6 +43,10 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 * Feature engineering
 
 ## Results and findings
-- Churn rate:
-![Churn Rate](images/churn_distribution.png)
+- **Churn rate**: The company has a relatively high customer churn rate of 26.5%, indicating that more than one in four customers discontinue their service. 
+![Churn rate](images/churn_distribution.png)
+- **Contract type**: The company faces a high churn rate of over 40% among customers with month-to-month contracts, which is significantly higher compared to one-year and two-year contracts. This indicates that the longer the contract, the less likely customers are to churn.
+![Churn_contract](images/churn_Contract.png)
+- **Dependents**: Customers without dependents show a higher churn rate of about 31%, compared to only 15% for those with dependents. This suggests that customers with dependents are more stable and loyal, while those without dependents are more prone to leaving.
+![Churn_Dependents](images/churn_Dependents)
 
