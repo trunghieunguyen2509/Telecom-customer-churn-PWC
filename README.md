@@ -7,7 +7,7 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 ### Data description
 - Data size: 7044 rows and 23 columns
 - This dataset contains customer information from a telecom company, Each row represents an individual customer, with features covering demographics, account details, services subscribed, and support interactions. The key target variable is Churn, indicating whether a customer has discontinued the service
-- Key features:
+**Key Feature**
 * customerID – Unique identifier for each customer.
 * gender – Gender of the customer (Male/Female).
 * SeniorCitizen – Indicates if the customer is a senior (1 = Yes, 0 = No).
@@ -43,10 +43,37 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 * Feature engineering
 
 ## Results and findings
-- **Churn rate**: The company has a relatively high customer churn rate of 26.5%, indicating that more than one in four customers discontinue their service. 
-![Churn rate](images/churn_distribution.png)
-- **Contract type**: The company faces a high churn rate of over 40% among customers with month-to-month contracts, which is significantly higher compared to one-year and two-year contracts. This indicates that the longer the contract, the less likely customers are to churn.
-![Churn_contract](images/churn_Contract.png)
-- **Dependents**: Customers without dependents show a higher churn rate of about 31%, compared to only 15% for those with dependents. This suggests that customers with dependents are more stable and loyal, while those without dependents are more prone to leaving.
-![Churn_Dependents](images/churn_Dependents)
+- **Churn rate**: The company has a relatively high customer churn rate of 26.5%, indicating that more than one in four customers discontinue their service.  
+  <img src="images/churn_distribution.png" alt="Churn rate" width="400"/>
+
+- **Contract type**: The company faces a high churn rate of over 40% among customers with month-to-month contracts, which is significantly higher compared to one-year and two-year contracts. This indicates that the longer the contract, the less likely customers are to churn.  
+  <img src="images/churn_Contract.png" alt="Churn contract" width="400"/>
+
+- **Dependents, Partner**: Customers without dependents or a partner show a higher churn rate of about 31%, compared to only 15% for those with dependents. This suggests that customers with dependents are more stable and loyal, while those without dependents are more prone to leaving.
+  <p align="left">
+    <img src="images/churn_Dependents.png" alt="Churn dependents" width="360"/>
+    <img src="images/churn_Partner.png" alt="Churn partner" width="360"/>
+  </p>
+
+- **Internet Service**: Customers with Fiber Optic service have the highest churn rate at around 42%, well above the overall average. In contrast, those with DSL churn at a lower rate (19%), and customers with no internet service have the lowest churn (7%).
+  <p align="left">
+    <img src="images/churn_InternetService.png" alt="Churn Internet Service" width="400"/>
+  </p>
+
+- **Online Backup, Security and Tech Support**: Customers without online backup, security, or tech support are more likely to churn, showing the value of those add-on services.
+  <p align="left">
+    <img src="images/churn_OnlineBackup.png" alt="Churn Online Backup" width="300"/>
+    <img src="images/churn_OnlineSecurity.png" alt="Churn Online Security" width="300"/>
+    <img src="images/churn_TechSupport.png" alt="Churn Tech Support" width="300"/>
+  </p>
+- **Billing and Payment Method**: Customer using electronic billing and payment method are significantly more likely to churn compare to low churn rate of automatic payment or traditional billing and payment method
+  <p align="left">
+    <img src="images/churn_PaperlessBilling.png" alt="Churn Paperless Billing" width="400"/>
+    <img src="images/churn_PaymentMethod.png" alt="Churn Payment Method" width="400"/>
+  </p>
+- **Tenure**: Customers with shorter tenure are much more likely to churn. Those in the 0–12 month group have the highest churn rate (48%), well above the average of 27%. Churn decreases steadily as tenure increases, with long-tenure customers.
+  <img src="images/Tenure.png" alt="Churn tenure" width="600"/>
+- **Monthly Charges**: Customers who churn generally have higher monthly charges, with a median of around $80, compared to about $65 for those who stay.
+
+  <img src="images/MonthCharges.png" alt="Month Charges" width="600"/>
 
