@@ -4,7 +4,7 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 ## Project Overview
 - Objective: Understand customer behavior and main drivers that lead to customer churn
 
-## Data description
+### Data description
 - Data size: 7044 rows and 23 columns
 - This dataset contains customer information from a telecom company, Each row represents an individual customer, with features covering demographics, account details, services subscribed, and support interactions. The key target variable is Churn, indicating whether a customer has discontinued the service
 - Key features:
@@ -32,7 +32,7 @@ This project, conducted under PwC’s Data & Analytics Consulting Division, cent
 * numTechTickets – Number of technical support tickets raised.
 * Churn – Target variable showing whether the customer left (Yes/No).
 
-- Data cleaning process:
+### Data cleaning process:
 * Convert TotalCharges to numeric
 * Ensure MonthlyCharges, tenure, numAdminTickets, numTechTickets are numeric/integers.
 * Impute TotalCharges with MonthlyCharges * tenure where available, else median.
